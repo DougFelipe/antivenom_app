@@ -12,16 +12,10 @@
 
 import { useState, useMemo, useEffect } from 'react';
 import {
-    Building2,
-    MapPin,
-    Globe,
-    Map,
     Search,
     ChevronLeft,
     ChevronRight,
     TrendingUp,
-    Activity,
-    Skull,
     Clock3,
 } from 'lucide-react';
 import { getMetricsContent } from '../../../infrastructure/content';
@@ -50,27 +44,22 @@ const ITEMS_PER_PAGE = 10;
  * Summary card component.
  */
 interface SummaryCardProps {
-    readonly icon: React.ReactNode;
     readonly value: number | string;
     readonly label: string;
     readonly description: string;
-    readonly color: string;
 }
 
-function SummaryCard({ icon, value, label, description, color }: SummaryCardProps) {
+function SummaryCard({ value, label, description }: SummaryCardProps) {
     const displayValue = typeof value === 'number' ? value.toLocaleString('pt-BR') : value;
 
     return (
-        <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-100">
-            <div className="flex items-start justify-between">
-                <div>
-                    <p className="text-sm text-gray-500 mb-1">{label}</p>
-                    <p className="text-3xl font-bold text-gray-900">
-                        {displayValue}
-                    </p>
-                    <p className="text-xs text-gray-400 mt-1">{description}</p>
-                </div>
-                <div className={`p-3 rounded-lg ${color}`}>{icon}</div>
+        <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-100 transition-colors hover:border-emerald-200">
+            <div>
+                <p className="text-sm font-medium text-gray-600 mb-2">{label}</p>
+                <p className="text-4xl font-bold tracking-tight text-gray-900 leading-none">
+                    {displayValue}
+                </p>
+                <p className="text-xs text-gray-500 mt-3">{description}</p>
             </div>
         </div>
     );
@@ -183,25 +172,19 @@ function OccurrenceMetricsSection({ data, isLoading, errorMessage }: OccurrenceM
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
                 <SummaryCard
-                    icon={<Activity className="w-6 h-6 text-white" />}
                     value={data.summary.totalOccurrences}
                     label="Ocorrências no período"
                     description="Total de casos reportados no Brasil"
-                    color="bg-emerald-700"
                 />
                 <SummaryCard
-                    icon={<MapPin className="w-6 h-6 text-white" />}
                     value={data.summary.averageIncidence.toFixed(2)}
                     label="Incidência média"
                     description={`${data.summary.averageIncidence.toFixed(2)} por 100 mil hab.`}
-                    color="bg-emerald-700"
                 />
                 <SummaryCard
-                    icon={<Skull className="w-6 h-6 text-white" />}
                     value={`${data.summary.lethalityRate.toFixed(2)}%`}
                     label="Taxa de letalidade"
                     description={`${data.summary.lethalityRate.toFixed(2)}% no período`}
-                    color="bg-emerald-700"
                 />
             </div>
 
@@ -499,32 +482,24 @@ export function MetricsPage() {
                 {/* Summary Cards */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
                     <SummaryCard
-                        icon={<Building2 className="w-6 h-6 text-white" />}
                         value={metricsSummary.totalCenters}
                         label={content.summary.cards.total_centers.label}
                         description={content.summary.cards.total_centers.description}
-                        color="bg-emerald-700"
                     />
                     <SummaryCard
-                        icon={<MapPin className="w-6 h-6 text-white" />}
                         value={metricsSummary.totalStates}
                         label={content.summary.cards.total_states.label}
                         description={content.summary.cards.total_states.description}
-                        color="bg-emerald-700"
                     />
                     <SummaryCard
-                        icon={<Map className="w-6 h-6 text-white" />}
                         value={metricsSummary.totalMunicipalities}
                         label={content.summary.cards.total_municipalities.label}
                         description={content.summary.cards.total_municipalities.description}
-                        color="bg-emerald-700"
                     />
                     <SummaryCard
-                        icon={<Globe className="w-6 h-6 text-white" />}
                         value={metricsSummary.totalRegions}
                         label={content.summary.cards.total_regions.label}
                         description={content.summary.cards.total_regions.description}
-                        color="bg-emerald-700"
                     />
                 </div>
 

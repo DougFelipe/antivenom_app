@@ -1,0 +1,2082 @@
+{
+  "metadata": {
+    "sourceFile": "Occurence_sinannet_cnv_animaisbr181817177_37_144_5.csv.xlsx",
+    "generatedAt": "2026-02-25T02:10:14.498587+00:00",
+    "years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "totalRows": 28,
+    "stateRows": 27
+  },
+  "summary": {
+    "totalOccurrences": 2645059,
+    "averageIncidence": 20.162,
+    "lethalityRate": 0.457
+  },
+  "brazilByYear": [
+    {
+      "year": 2015,
+      "occurrences": 171768,
+      "incidence": 11.37,
+      "lethality": 0.43
+    },
+    {
+      "year": 2016,
+      "occurrences": 174457,
+      "incidence": 11.09,
+      "lethality": 0.51
+    },
+    {
+      "year": 2017,
+      "occurrences": 223829,
+      "incidence": 12.03,
+      "lethality": 0.43
+    },
+    {
+      "year": 2018,
+      "occurrences": 268217,
+      "incidence": 11.92,
+      "lethality": 0.42
+    },
+    {
+      "year": 2019,
+      "occurrences": 292746,
+      "incidence": 13.46,
+      "lethality": 0.52
+    },
+    {
+      "year": 2020,
+      "occurrences": 254648,
+      "incidence": 12.9,
+      "lethality": 0.45
+    },
+    {
+      "year": 2021,
+      "occurrences": 263074,
+      "incidence": 13.12,
+      "lethality": 0.54
+    },
+    {
+      "year": 2022,
+      "occurrences": 299017,
+      "incidence": 12.13,
+      "lethality": 0.36
+    },
+    {
+      "year": 2023,
+      "occurrences": 353076,
+      "incidence": 12.3,
+      "lethality": 0.45
+    },
+    {
+      "year": 2024,
+      "occurrences": 344227,
+      "incidence": 11.77,
+      "lethality": 0.47
+    }
+  ],
+  "timeToCareBrazil": [
+    {
+      "bucket": "ignored_or_blank",
+      "label": "Ignorado/Branco",
+      "count": 222930,
+      "percentage": 8.43
+    },
+    {
+      "bucket": "up_to_1h",
+      "label": "0 a 1 hora",
+      "count": 1312537,
+      "percentage": 49.62
+    },
+    {
+      "bucket": "between_1h_3h",
+      "label": "1 a 3 horas",
+      "count": 580257,
+      "percentage": 21.94
+    },
+    {
+      "bucket": "between_3h_6h",
+      "label": "3 a 6 horas",
+      "count": 189590,
+      "percentage": 7.17
+    },
+    {
+      "bucket": "between_6h_12h",
+      "label": "6 a 12 horas",
+      "count": 87854,
+      "percentage": 3.32
+    },
+    {
+      "bucket": "between_12h_24h",
+      "label": "12 a 24 horas",
+      "count": 90322,
+      "percentage": 3.41
+    },
+    {
+      "bucket": "more_than_24h",
+      "label": "24 horas+",
+      "count": 161569,
+      "percentage": 6.11
+    }
+  ],
+  "byRegion": [
+    {
+      "region": "Southeast",
+      "totalOccurrences": 1031528,
+      "stateCount": 4,
+      "percentageOfBrazil": 39.0
+    },
+    {
+      "region": "Northeast",
+      "totalOccurrences": 911803,
+      "stateCount": 9,
+      "percentageOfBrazil": 34.47
+    },
+    {
+      "region": "South",
+      "totalOccurrences": 325994,
+      "stateCount": 3,
+      "percentageOfBrazil": 12.32
+    },
+    {
+      "region": "North",
+      "totalOccurrences": 207171,
+      "stateCount": 7,
+      "percentageOfBrazil": 7.83
+    },
+    {
+      "region": "Mid-west",
+      "totalOccurrences": 168563,
+      "stateCount": 4,
+      "percentageOfBrazil": 6.37
+    }
+  ],
+  "byState": [
+    {
+      "uf": "MG",
+      "state": "Minas Gerais",
+      "region": "Southeast",
+      "totalOccurrences": 470759,
+      "percentageOfBrazil": 17.8,
+      "incidenceCoefficient": 13.281,
+      "lethalityRate": 0.39,
+      "yearly": [
+        {
+          "year": 2015,
+          "occurrences": 30570,
+          "incidence": 11.55,
+          "lethality": 0.25
+        },
+        {
+          "year": 2016,
+          "occurrences": 32185,
+          "incidence": 10.72,
+          "lethality": 0.41
+        },
+        {
+          "year": 2017,
+          "occurrences": 41146,
+          "incidence": 14.41,
+          "lethality": 0.17
+        },
+        {
+          "year": 2018,
+          "occurrences": 51573,
+          "incidence": 14.52,
+          "lethality": 0.2
+        },
+        {
+          "year": 2019,
+          "occurrences": 52322,
+          "incidence": 14.84,
+          "lethality": 0.55
+        },
+        {
+          "year": 2020,
+          "occurrences": 49409,
+          "incidence": 14.86,
+          "lethality": 0.32
+        },
+        {
+          "year": 2021,
+          "occurrences": 47293,
+          "incidence": 13.2,
+          "lethality": 0.57
+        },
+        {
+          "year": 2022,
+          "occurrences": 51886,
+          "incidence": 12.5,
+          "lethality": 0.53
+        },
+        {
+          "year": 2023,
+          "occurrences": 58846,
+          "incidence": 13.24,
+          "lethality": 0.39
+        },
+        {
+          "year": 2024,
+          "occurrences": 55529,
+          "incidence": 12.97,
+          "lethality": 0.51
+        }
+      ]
+    },
+    {
+      "uf": "SP",
+      "state": "São Paulo",
+      "region": "Southeast",
+      "totalOccurrences": 469422,
+      "percentageOfBrazil": 17.75,
+      "incidenceCoefficient": 3.533,
+      "lethalityRate": 0.408,
+      "yearly": [
+        {
+          "year": 2015,
+          "occurrences": 26112,
+          "incidence": 3.37,
+          "lethality": 0.47
+        },
+        {
+          "year": 2016,
+          "occurrences": 28402,
+          "incidence": 3.12,
+          "lethality": 0.58
+        },
+        {
+          "year": 2017,
+          "occurrences": 34621,
+          "incidence": 3.88,
+          "lethality": 0.4
+        },
+        {
+          "year": 2018,
+          "occurrences": 44523,
+          "incidence": 3.63,
+          "lethality": 0.31
+        },
+        {
+          "year": 2019,
+          "occurrences": 50630,
+          "incidence": 3.65,
+          "lethality": 0.42
+        },
+        {
+          "year": 2020,
+          "occurrences": 47799,
+          "incidence": 3.49,
+          "lethality": 0.25
+        },
+        {
+          "year": 2021,
+          "occurrences": 46597,
+          "incidence": 3.73,
+          "lethality": 0.41
+        },
+        {
+          "year": 2022,
+          "occurrences": 57524,
+          "incidence": 3.32,
+          "lethality": 0.33
+        },
+        {
+          "year": 2023,
+          "occurrences": 71997,
+          "incidence": 3.64,
+          "lethality": 0.6
+        },
+        {
+          "year": 2024,
+          "occurrences": 61217,
+          "incidence": 3.5,
+          "lethality": 0.31
+        }
+      ]
+    },
+    {
+      "uf": "BA",
+      "state": "Bahia",
+      "region": "Northeast",
+      "totalOccurrences": 245748,
+      "percentageOfBrazil": 9.29,
+      "incidenceCoefficient": 14.864,
+      "lethalityRate": 0.529,
+      "yearly": [
+        {
+          "year": 2015,
+          "occurrences": 14997,
+          "incidence": 13.86,
+          "lethality": 0.6
+        },
+        {
+          "year": 2016,
+          "occurrences": 13873,
+          "incidence": 13.86,
+          "lethality": 0.94
+        },
+        {
+          "year": 2017,
+          "occurrences": 19588,
+          "incidence": 14.27,
+          "lethality": 0.82
+        },
+        {
+          "year": 2018,
+          "occurrences": 26314,
+          "incidence": 12.19,
+          "lethality": 0.62
+        },
+        {
+          "year": 2019,
+          "occurrences": 28610,
+          "incidence": 14.48,
+          "lethality": 0.42
+        },
+        {
+          "year": 2020,
+          "occurrences": 24715,
+          "incidence": 16.1,
+          "lethality": 0.38
+        },
+        {
+          "year": 2021,
+          "occurrences": 24275,
+          "incidence": 16.61,
+          "lethality": 0.41
+        },
+        {
+          "year": 2022,
+          "occurrences": 27897,
+          "incidence": 15.97,
+          "lethality": 0.21
+        },
+        {
+          "year": 2023,
+          "occurrences": 31742,
+          "incidence": 16.43,
+          "lethality": 0.57
+        },
+        {
+          "year": 2024,
+          "occurrences": 33737,
+          "incidence": 14.87,
+          "lethality": 0.32
+        }
+      ]
+    },
+    {
+      "uf": "PE",
+      "state": "Pernambuco",
+      "region": "Northeast",
+      "totalOccurrences": 200646,
+      "percentageOfBrazil": 7.59,
+      "incidenceCoefficient": 5.467,
+      "lethalityRate": 0.659,
+      "yearly": [
+        {
+          "year": 2015,
+          "occurrences": 11626,
+          "incidence": 4.21,
+          "lethality": 1.03
+        },
+        {
+          "year": 2016,
+          "occurrences": 13333,
+          "incidence": 5.47,
+          "lethality": 1.38
+        },
+        {
+          "year": 2017,
+          "occurrences": 18685,
+          "incidence": 4.3,
+          "lethality": 0.25
+        },
+        {
+          "year": 2018,
+          "occurrences": 23116,
+          "incidence": 4.61,
+          "lethality": 0.7
+        },
+        {
+          "year": 2019,
+          "occurrences": 22692,
+          "incidence": 5.7,
+          "lethality": 0.56
+        },
+        {
+          "year": 2020,
+          "occurrences": 16948,
+          "incidence": 5.55,
+          "lethality": 0.57
+        },
+        {
+          "year": 2021,
+          "occurrences": 20867,
+          "incidence": 6.8,
+          "lethality": 0.0
+        },
+        {
+          "year": 2022,
+          "occurrences": 23124,
+          "incidence": 6.34,
+          "lethality": 0.66
+        },
+        {
+          "year": 2023,
+          "occurrences": 25063,
+          "incidence": 5.91,
+          "lethality": 0.71
+        },
+        {
+          "year": 2024,
+          "occurrences": 25192,
+          "incidence": 5.78,
+          "lethality": 0.73
+        }
+      ]
+    },
+    {
+      "uf": "PR",
+      "state": "Paraná",
+      "region": "South",
+      "totalOccurrences": 173449,
+      "percentageOfBrazil": 6.56,
+      "incidenceCoefficient": 5.421,
+      "lethalityRate": 0.552,
+      "yearly": [
+        {
+          "year": 2015,
+          "occurrences": 15713,
+          "incidence": 5.94,
+          "lethality": 0.45
+        },
+        {
+          "year": 2016,
+          "occurrences": 14428,
+          "incidence": 6.4,
+          "lethality": 0.28
+        },
+        {
+          "year": 2017,
+          "occurrences": 17419,
+          "incidence": 6.34,
+          "lethality": 0.28
+        },
+        {
+          "year": 2018,
+          "occurrences": 18171,
+          "incidence": 5.42,
+          "lethality": 0.49
+        },
+        {
+          "year": 2019,
+          "occurrences": 18213,
+          "incidence": 5.48,
+          "lethality": 0.79
+        },
+        {
+          "year": 2020,
+          "occurrences": 14564,
+          "incidence": 4.82,
+          "lethality": 0.72
+        },
+        {
+          "year": 2021,
+          "occurrences": 14698,
+          "incidence": 4.51,
+          "lethality": 0.57
+        },
+        {
+          "year": 2022,
+          "occurrences": 16323,
+          "incidence": 4.58,
+          "lethality": 0.19
+        },
+        {
+          "year": 2023,
+          "occurrences": 22024,
+          "incidence": 5.45,
+          "lethality": 0.63
+        },
+        {
+          "year": 2024,
+          "occurrences": 21896,
+          "incidence": 5.27,
+          "lethality": 1.12
+        }
+      ]
+    },
+    {
+      "uf": "AL",
+      "state": "Alagoas",
+      "region": "Northeast",
+      "totalOccurrences": 119709,
+      "percentageOfBrazil": 4.53,
+      "incidenceCoefficient": 5.305,
+      "lethalityRate": 0.0,
+      "yearly": [
+        {
+          "year": 2015,
+          "occurrences": 7987,
+          "incidence": 5.0,
+          "lethality": 0.0
+        },
+        {
+          "year": 2016,
+          "occurrences": 8344,
+          "incidence": 4.99,
+          "lethality": 0.0
+        },
+        {
+          "year": 2017,
+          "occurrences": 10258,
+          "incidence": 5.39,
+          "lethality": 0.0
+        },
+        {
+          "year": 2018,
+          "occurrences": 11386,
+          "incidence": 4.37,
+          "lethality": 0.0
+        },
+        {
+          "year": 2019,
+          "occurrences": 12565,
+          "incidence": 5.58,
+          "lethality": 0.0
+        },
+        {
+          "year": 2020,
+          "occurrences": 11094,
+          "incidence": 5.29,
+          "lethality": 0.0
+        },
+        {
+          "year": 2021,
+          "occurrences": 13215,
+          "incidence": 6.65,
+          "lethality": 0.0
+        },
+        {
+          "year": 2022,
+          "occurrences": 13872,
+          "incidence": 5.19,
+          "lethality": 0.0
+        },
+        {
+          "year": 2023,
+          "occurrences": 14954,
+          "incidence": 5.47,
+          "lethality": 0.0
+        },
+        {
+          "year": 2024,
+          "occurrences": 16034,
+          "incidence": 5.12,
+          "lethality": 0.0
+        }
+      ]
+    },
+    {
+      "uf": "PA",
+      "state": "Pará",
+      "region": "North",
+      "totalOccurrences": 90433,
+      "percentageOfBrazil": 3.42,
+      "incidenceCoefficient": 59.244,
+      "lethalityRate": 0.319,
+      "yearly": [
+        {
+          "year": 2015,
+          "occurrences": 7727,
+          "incidence": 58.56,
+          "lethality": 0.15
+        },
+        {
+          "year": 2016,
+          "occurrences": 7378,
+          "incidence": 56.03,
+          "lethality": 0.28
+        },
+        {
+          "year": 2017,
+          "occurrences": 7622,
+          "incidence": 56.92,
+          "lethality": 0.3
+        },
+        {
+          "year": 2018,
+          "occurrences": 7508,
+          "incidence": 56.11,
+          "lethality": 0.19
+        },
+        {
+          "year": 2019,
+          "occurrences": 8889,
+          "incidence": 62.74,
+          "lethality": 0.49
+        },
+        {
+          "year": 2020,
+          "occurrences": 8261,
+          "incidence": 59.95,
+          "lethality": 0.51
+        },
+        {
+          "year": 2021,
+          "occurrences": 9490,
+          "incidence": 65.32,
+          "lethality": 0.4
+        },
+        {
+          "year": 2022,
+          "occurrences": 11079,
+          "incidence": 63.57,
+          "lethality": 0.26
+        },
+        {
+          "year": 2023,
+          "occurrences": 11402,
+          "incidence": 58.14,
+          "lethality": 0.34
+        },
+        {
+          "year": 2024,
+          "occurrences": 11077,
+          "incidence": 55.1,
+          "lethality": 0.27
+        }
+      ]
+    },
+    {
+      "uf": "CE",
+      "state": "Ceará",
+      "region": "Northeast",
+      "totalOccurrences": 84928,
+      "percentageOfBrazil": 3.21,
+      "incidenceCoefficient": 7.643,
+      "lethalityRate": 0.586,
+      "yearly": [
+        {
+          "year": 2015,
+          "occurrences": 3946,
+          "incidence": 5.42,
+          "lethality": 1.05
+        },
+        {
+          "year": 2016,
+          "occurrences": 5235,
+          "incidence": 7.36,
+          "lethality": 0.77
+        },
+        {
+          "year": 2017,
+          "occurrences": 6088,
+          "incidence": 7.42,
+          "lethality": 0.76
+        },
+        {
+          "year": 2018,
+          "occurrences": 8087,
+          "incidence": 6.92,
+          "lethality": 0.16
+        },
+        {
+          "year": 2019,
+          "occurrences": 11266,
+          "incidence": 9.5,
+          "lethality": 0.7
+        },
+        {
+          "year": 2020,
+          "occurrences": 8375,
+          "incidence": 8.28,
+          "lethality": 0.93
+        },
+        {
+          "year": 2021,
+          "occurrences": 8027,
+          "incidence": 8.17,
+          "lethality": 0.54
+        },
+        {
+          "year": 2022,
+          "occurrences": 9847,
+          "incidence": 6.73,
+          "lethality": 0.16
+        },
+        {
+          "year": 2023,
+          "occurrences": 12275,
+          "incidence": 9.1,
+          "lethality": 0.36
+        },
+        {
+          "year": 2024,
+          "occurrences": 11782,
+          "incidence": 7.53,
+          "lethality": 0.43
+        }
+      ]
+    },
+    {
+      "uf": "SC",
+      "state": "Santa Catarina",
+      "region": "South",
+      "totalOccurrences": 82142,
+      "percentageOfBrazil": 3.11,
+      "incidenceCoefficient": 7.281,
+      "lethalityRate": 0.272,
+      "yearly": [
+        {
+          "year": 2015,
+          "occurrences": 9479,
+          "incidence": 8.97,
+          "lethality": 0.32
+        },
+        {
+          "year": 2016,
+          "occurrences": 8263,
+          "incidence": 8.12,
+          "lethality": 0.18
+        },
+        {
+          "year": 2017,
+          "occurrences": 8944,
+          "incidence": 8.18,
+          "lethality": 0.51
+        },
+        {
+          "year": 2018,
+          "occurrences": 8814,
+          "incidence": 7.17,
+          "lethality": 0.38
+        },
+        {
+          "year": 2019,
+          "occurrences": 9376,
+          "incidence": 7.02,
+          "lethality": 0.0
+        },
+        {
+          "year": 2020,
+          "occurrences": 6298,
+          "incidence": 7.08,
+          "lethality": 0.0
+        },
+        {
+          "year": 2021,
+          "occurrences": 6332,
+          "incidence": 6.77,
+          "lethality": 0.58
+        },
+        {
+          "year": 2022,
+          "occurrences": 6581,
+          "incidence": 6.62,
+          "lethality": 0.19
+        },
+        {
+          "year": 2023,
+          "occurrences": 8861,
+          "incidence": 6.27,
+          "lethality": 0.0
+        },
+        {
+          "year": 2024,
+          "occurrences": 9194,
+          "incidence": 6.61,
+          "lethality": 0.56
+        }
+      ]
+    },
+    {
+      "uf": "GO",
+      "state": "Goiás",
+      "region": "Mid-west",
+      "totalOccurrences": 78127,
+      "percentageOfBrazil": 2.95,
+      "incidenceCoefficient": 15.534,
+      "lethalityRate": 0.671,
+      "yearly": [
+        {
+          "year": 2015,
+          "occurrences": 3532,
+          "incidence": 13.05,
+          "lethality": 0.58
+        },
+        {
+          "year": 2016,
+          "occurrences": 4108,
+          "incidence": 14.66,
+          "lethality": 0.51
+        },
+        {
+          "year": 2017,
+          "occurrences": 5712,
+          "incidence": 17.94,
+          "lethality": 0.9
+        },
+        {
+          "year": 2018,
+          "occurrences": 7097,
+          "incidence": 13.73,
+          "lethality": 0.53
+        },
+        {
+          "year": 2019,
+          "occurrences": 8402,
+          "incidence": 15.63,
+          "lethality": 0.46
+        },
+        {
+          "year": 2020,
+          "occurrences": 7714,
+          "incidence": 16.16,
+          "lethality": 0.61
+        },
+        {
+          "year": 2021,
+          "occurrences": 8656,
+          "incidence": 19.44,
+          "lethality": 0.36
+        },
+        {
+          "year": 2022,
+          "occurrences": 9713,
+          "incidence": 14.47,
+          "lethality": 0.58
+        },
+        {
+          "year": 2023,
+          "occurrences": 12132,
+          "incidence": 15.64,
+          "lethality": 0.88
+        },
+        {
+          "year": 2024,
+          "occurrences": 11061,
+          "incidence": 14.62,
+          "lethality": 1.3
+        }
+      ]
+    },
+    {
+      "uf": "RN",
+      "state": "Rio Grande do Norte",
+      "region": "Northeast",
+      "totalOccurrences": 70938,
+      "percentageOfBrazil": 2.68,
+      "incidenceCoefficient": 10.833,
+      "lethalityRate": 0.402,
+      "yearly": [
+        {
+          "year": 2015,
+          "occurrences": 5650,
+          "incidence": 6.29,
+          "lethality": 0.48
+        },
+        {
+          "year": 2016,
+          "occurrences": 5433,
+          "incidence": 8.92,
+          "lethality": 0.34
+        },
+        {
+          "year": 2017,
+          "occurrences": 6519,
+          "incidence": 9.94,
+          "lethality": 0.3
+        },
+        {
+          "year": 2018,
+          "occurrences": 7091,
+          "incidence": 9.33,
+          "lethality": 0.0
+        },
+        {
+          "year": 2019,
+          "occurrences": 9135,
+          "incidence": 14.8,
+          "lethality": 0.8
+        },
+        {
+          "year": 2020,
+          "occurrences": 6323,
+          "incidence": 15.61,
+          "lethality": 0.75
+        },
+        {
+          "year": 2021,
+          "occurrences": 5771,
+          "incidence": 13.16,
+          "lethality": 1.11
+        },
+        {
+          "year": 2022,
+          "occurrences": 7569,
+          "incidence": 7.82,
+          "lethality": 0.0
+        },
+        {
+          "year": 2023,
+          "occurrences": 8551,
+          "incidence": 10.53,
+          "lethality": 0.0
+        },
+        {
+          "year": 2024,
+          "occurrences": 8896,
+          "incidence": 11.93,
+          "lethality": 0.24
+        }
+      ]
+    },
+    {
+      "uf": "PB",
+      "state": "Paraíba",
+      "region": "Northeast",
+      "totalOccurrences": 70728,
+      "percentageOfBrazil": 2.67,
+      "incidenceCoefficient": 8.44,
+      "lethalityRate": 0.709,
+      "yearly": [
+        {
+          "year": 2015,
+          "occurrences": 3846,
+          "incidence": 6.56,
+          "lethality": 0.0
+        },
+        {
+          "year": 2016,
+          "occurrences": 2111,
+          "incidence": 6.77,
+          "lethality": 0.75
+        },
+        {
+          "year": 2017,
+          "occurrences": 5401,
+          "incidence": 7.11,
+          "lethality": 0.35
+        },
+        {
+          "year": 2018,
+          "occurrences": 6263,
+          "incidence": 6.79,
+          "lethality": 1.84
+        },
+        {
+          "year": 2019,
+          "occurrences": 8183,
+          "incidence": 9.51,
+          "lethality": 0.52
+        },
+        {
+          "year": 2020,
+          "occurrences": 7399,
+          "incidence": 11.61,
+          "lethality": 0.42
+        },
+        {
+          "year": 2021,
+          "occurrences": 7810,
+          "incidence": 10.01,
+          "lethality": 0.98
+        },
+        {
+          "year": 2022,
+          "occurrences": 8435,
+          "incidence": 9.01,
+          "lethality": 0.81
+        },
+        {
+          "year": 2023,
+          "occurrences": 10284,
+          "incidence": 8.8,
+          "lethality": 0.83
+        },
+        {
+          "year": 2024,
+          "occurrences": 10996,
+          "incidence": 8.23,
+          "lethality": 0.59
+        }
+      ]
+    },
+    {
+      "uf": "RS",
+      "state": "Rio Grande do Sul",
+      "region": "South",
+      "totalOccurrences": 70403,
+      "percentageOfBrazil": 2.66,
+      "incidenceCoefficient": 5.628,
+      "lethalityRate": 0.406,
+      "yearly": [
+        {
+          "year": 2015,
+          "occurrences": 5700,
+          "incidence": 6.79,
+          "lethality": 0.13
+        },
+        {
+          "year": 2016,
+          "occurrences": 5226,
+          "incidence": 6.5,
+          "lethality": 0.14
+        },
+        {
+          "year": 2017,
+          "occurrences": 7102,
+          "incidence": 6.7,
+          "lethality": 0.4
+        },
+        {
+          "year": 2018,
+          "occurrences": 6887,
+          "incidence": 5.4,
+          "lethality": 0.5
+        },
+        {
+          "year": 2019,
+          "occurrences": 8338,
+          "incidence": 5.8,
+          "lethality": 0.0
+        },
+        {
+          "year": 2020,
+          "occurrences": 6341,
+          "incidence": 4.61,
+          "lethality": 0.39
+        },
+        {
+          "year": 2021,
+          "occurrences": 6482,
+          "incidence": 4.71,
+          "lethality": 1.13
+        },
+        {
+          "year": 2022,
+          "occurrences": 6263,
+          "incidence": 4.53,
+          "lethality": 0.59
+        },
+        {
+          "year": 2023,
+          "occurrences": 8579,
+          "incidence": 5.35,
+          "lethality": 0.17
+        },
+        {
+          "year": 2024,
+          "occurrences": 9485,
+          "incidence": 5.89,
+          "lethality": 0.61
+        }
+      ]
+    },
+    {
+      "uf": "ES",
+      "state": "Espírito Santo",
+      "region": "Southeast",
+      "totalOccurrences": 67057,
+      "percentageOfBrazil": 2.54,
+      "incidenceCoefficient": 15.716,
+      "lethalityRate": 0.149,
+      "yearly": [
+        {
+          "year": 2015,
+          "occurrences": 4246,
+          "incidence": 15.7,
+          "lethality": 0.33
+        },
+        {
+          "year": 2016,
+          "occurrences": 4342,
+          "incidence": 13.15,
+          "lethality": 0.2
+        },
+        {
+          "year": 2017,
+          "occurrences": 7016,
+          "incidence": 15.55,
+          "lethality": 0.0
+        },
+        {
+          "year": 2018,
+          "occurrences": 8235,
+          "incidence": 19.28,
+          "lethality": 0.13
+        },
+        {
+          "year": 2019,
+          "occurrences": 6125,
+          "incidence": 16.02,
+          "lethality": 0.0
+        },
+        {
+          "year": 2020,
+          "occurrences": 6362,
+          "incidence": 16.47,
+          "lethality": 0.0
+        },
+        {
+          "year": 2021,
+          "occurrences": 7455,
+          "incidence": 16.76,
+          "lethality": 0.0
+        },
+        {
+          "year": 2022,
+          "occurrences": 7476,
+          "incidence": 14.19,
+          "lethality": 0.17
+        },
+        {
+          "year": 2023,
+          "occurrences": 7897,
+          "incidence": 13.59,
+          "lethality": 0.36
+        },
+        {
+          "year": 2024,
+          "occurrences": 7903,
+          "incidence": 16.45,
+          "lethality": 0.3
+        }
+      ]
+    },
+    {
+      "uf": "PI",
+      "state": "Piauí",
+      "region": "Northeast",
+      "totalOccurrences": 47709,
+      "percentageOfBrazil": 1.8,
+      "incidenceCoefficient": 7.396,
+      "lethalityRate": 0.738,
+      "yearly": [
+        {
+          "year": 2015,
+          "occurrences": 2129,
+          "incidence": 4.15,
+          "lethality": 1.48
+        },
+        {
+          "year": 2016,
+          "occurrences": 2820,
+          "incidence": 5.07,
+          "lethality": 0.0
+        },
+        {
+          "year": 2017,
+          "occurrences": 3828,
+          "incidence": 5.27,
+          "lethality": 1.16
+        },
+        {
+          "year": 2018,
+          "occurrences": 4590,
+          "incidence": 6.03,
+          "lethality": 1.01
+        },
+        {
+          "year": 2019,
+          "occurrences": 4567,
+          "incidence": 7.89,
+          "lethality": 0.76
+        },
+        {
+          "year": 2020,
+          "occurrences": 3479,
+          "incidence": 8.66,
+          "lethality": 0.0
+        },
+        {
+          "year": 2021,
+          "occurrences": 4842,
+          "incidence": 9.56,
+          "lethality": 0.94
+        },
+        {
+          "year": 2022,
+          "occurrences": 6294,
+          "incidence": 7.98,
+          "lethality": 1.12
+        },
+        {
+          "year": 2023,
+          "occurrences": 7082,
+          "incidence": 9.63,
+          "lethality": 0.0
+        },
+        {
+          "year": 2024,
+          "occurrences": 8078,
+          "incidence": 9.72,
+          "lethality": 0.91
+        }
+      ]
+    },
+    {
+      "uf": "TO",
+      "state": "Tocantins",
+      "region": "North",
+      "totalOccurrences": 45484,
+      "percentageOfBrazil": 1.72,
+      "incidenceCoefficient": 44.218,
+      "lethalityRate": 0.324,
+      "yearly": [
+        {
+          "year": 2015,
+          "occurrences": 2607,
+          "incidence": 49.14,
+          "lethality": 0.41
+        },
+        {
+          "year": 2016,
+          "occurrences": 2826,
+          "incidence": 50.02,
+          "lethality": 0.27
+        },
+        {
+          "year": 2017,
+          "occurrences": 3669,
+          "incidence": 40.24,
+          "lethality": 0.17
+        },
+        {
+          "year": 2018,
+          "occurrences": 4768,
+          "incidence": 46.5,
+          "lethality": 0.28
+        },
+        {
+          "year": 2019,
+          "occurrences": 5332,
+          "incidence": 54.68,
+          "lethality": 0.24
+        },
+        {
+          "year": 2020,
+          "occurrences": 4714,
+          "incidence": 51.69,
+          "lethality": 0.5
+        },
+        {
+          "year": 2021,
+          "occurrences": 4868,
+          "incidence": 39.72,
+          "lethality": 0.33
+        },
+        {
+          "year": 2022,
+          "occurrences": 4998,
+          "incidence": 36.02,
+          "lethality": 0.0
+        },
+        {
+          "year": 2023,
+          "occurrences": 5916,
+          "incidence": 39.43,
+          "lethality": 0.49
+        },
+        {
+          "year": 2024,
+          "occurrences": 5786,
+          "incidence": 34.74,
+          "lethality": 0.55
+        }
+      ]
+    },
+    {
+      "uf": "MA",
+      "state": "Maranhão",
+      "region": "Northeast",
+      "totalOccurrences": 45063,
+      "percentageOfBrazil": 1.7,
+      "incidenceCoefficient": 24.864,
+      "lethalityRate": 0.704,
+      "yearly": [
+        {
+          "year": 2015,
+          "occurrences": 2371,
+          "incidence": 20.45,
+          "lethality": 1.0
+        },
+        {
+          "year": 2016,
+          "occurrences": 2332,
+          "incidence": 16.26,
+          "lethality": 0.63
+        },
+        {
+          "year": 2017,
+          "occurrences": 3452,
+          "incidence": 18.0,
+          "lethality": 0.73
+        },
+        {
+          "year": 2018,
+          "occurrences": 4617,
+          "incidence": 23.68,
+          "lethality": 1.04
+        },
+        {
+          "year": 2019,
+          "occurrences": 5424,
+          "incidence": 30.56,
+          "lethality": 0.94
+        },
+        {
+          "year": 2020,
+          "occurrences": 4735,
+          "incidence": 30.21,
+          "lethality": 0.66
+        },
+        {
+          "year": 2021,
+          "occurrences": 5474,
+          "incidence": 30.34,
+          "lethality": 0.99
+        },
+        {
+          "year": 2022,
+          "occurrences": 5653,
+          "incidence": 28.19,
+          "lethality": 0.3
+        },
+        {
+          "year": 2023,
+          "occurrences": 5539,
+          "incidence": 27.44,
+          "lethality": 0.26
+        },
+        {
+          "year": 2024,
+          "occurrences": 5466,
+          "incidence": 23.51,
+          "lethality": 0.49
+        }
+      ]
+    },
+    {
+      "uf": "MS",
+      "state": "Mato Grosso do Sul",
+      "region": "Mid-west",
+      "totalOccurrences": 42018,
+      "percentageOfBrazil": 1.59,
+      "incidenceCoefficient": 14.854,
+      "lethalityRate": 0.256,
+      "yearly": [
+        {
+          "year": 2015,
+          "occurrences": 2201,
+          "incidence": 17.38,
+          "lethality": 0.0
+        },
+        {
+          "year": 2016,
+          "occurrences": 2075,
+          "incidence": 16.95,
+          "lethality": 0.22
+        },
+        {
+          "year": 2017,
+          "occurrences": 2951,
+          "incidence": 18.82,
+          "lethality": 0.2
+        },
+        {
+          "year": 2018,
+          "occurrences": 3463,
+          "incidence": 15.62,
+          "lethality": 0.23
+        },
+        {
+          "year": 2019,
+          "occurrences": 4070,
+          "incidence": 17.39,
+          "lethality": 0.21
+        },
+        {
+          "year": 2020,
+          "occurrences": 3886,
+          "incidence": 12.11,
+          "lethality": 0.59
+        },
+        {
+          "year": 2021,
+          "occurrences": 4271,
+          "incidence": 12.32,
+          "lethality": 0.57
+        },
+        {
+          "year": 2022,
+          "occurrences": 5304,
+          "incidence": 11.84,
+          "lethality": 0.0
+        },
+        {
+          "year": 2023,
+          "occurrences": 6825,
+          "incidence": 11.57,
+          "lethality": 0.3
+        },
+        {
+          "year": 2024,
+          "occurrences": 6972,
+          "incidence": 14.54,
+          "lethality": 0.24
+        }
+      ]
+    },
+    {
+      "uf": "AM",
+      "state": "Amazonas",
+      "region": "North",
+      "totalOccurrences": 29200,
+      "percentageOfBrazil": 1.1,
+      "incidenceCoefficient": 43.156,
+      "lethalityRate": 0.718,
+      "yearly": [
+        {
+          "year": 2015,
+          "occurrences": 2267,
+          "incidence": 35.6,
+          "lethality": 0.87
+        },
+        {
+          "year": 2016,
+          "occurrences": 2195,
+          "incidence": 34.9,
+          "lethality": 1.02
+        },
+        {
+          "year": 2017,
+          "occurrences": 2517,
+          "incidence": 38.45,
+          "lethality": 0.52
+        },
+        {
+          "year": 2018,
+          "occurrences": 2941,
+          "incidence": 44.17,
+          "lethality": 0.62
+        },
+        {
+          "year": 2019,
+          "occurrences": 3329,
+          "incidence": 52.44,
+          "lethality": 0.8
+        },
+        {
+          "year": 2020,
+          "occurrences": 3004,
+          "incidence": 49.16,
+          "lethality": 0.69
+        },
+        {
+          "year": 2021,
+          "occurrences": 3328,
+          "incidence": 51.01,
+          "lethality": 0.8
+        },
+        {
+          "year": 2022,
+          "occurrences": 3249,
+          "incidence": 45.12,
+          "lethality": 0.58
+        },
+        {
+          "year": 2023,
+          "occurrences": 3165,
+          "incidence": 40.14,
+          "lethality": 0.82
+        },
+        {
+          "year": 2024,
+          "occurrences": 3205,
+          "incidence": 40.57,
+          "lethality": 0.46
+        }
+      ]
+    },
+    {
+      "uf": "SE",
+      "state": "Sergipe",
+      "region": "Northeast",
+      "totalOccurrences": 26334,
+      "percentageOfBrazil": 1.0,
+      "incidenceCoefficient": 4.009,
+      "lethalityRate": 0.742,
+      "yearly": [
+        {
+          "year": 2015,
+          "occurrences": 1349,
+          "incidence": 5.68,
+          "lethality": 0.81
+        },
+        {
+          "year": 2016,
+          "occurrences": 1439,
+          "incidence": 2.5,
+          "lethality": 1.82
+        },
+        {
+          "year": 2017,
+          "occurrences": 2020,
+          "incidence": 3.71,
+          "lethality": 1.22
+        },
+        {
+          "year": 2018,
+          "occurrences": 2407,
+          "incidence": 3.23,
+          "lethality": 2.78
+        },
+        {
+          "year": 2019,
+          "occurrences": 2504,
+          "incidence": 5.62,
+          "lethality": 0.79
+        },
+        {
+          "year": 2020,
+          "occurrences": 2259,
+          "incidence": 2.62,
+          "lethality": 0.0
+        },
+        {
+          "year": 2021,
+          "occurrences": 2245,
+          "incidence": 4.28,
+          "lethality": 0.0
+        },
+        {
+          "year": 2022,
+          "occurrences": 3413,
+          "incidence": 4.27,
+          "lethality": 0.0
+        },
+        {
+          "year": 2023,
+          "occurrences": 4197,
+          "incidence": 4.34,
+          "lethality": 0.0
+        },
+        {
+          "year": 2024,
+          "occurrences": 4501,
+          "incidence": 3.84,
+          "lethality": 0.0
+        }
+      ]
+    },
+    {
+      "uf": "MT",
+      "state": "Mato Grosso",
+      "region": "Mid-west",
+      "totalOccurrences": 26155,
+      "percentageOfBrazil": 0.99,
+      "incidenceCoefficient": 30.148,
+      "lethalityRate": 0.568,
+      "yearly": [
+        {
+          "year": 2015,
+          "occurrences": 2268,
+          "incidence": 35.16,
+          "lethality": 0.34
+        },
+        {
+          "year": 2016,
+          "occurrences": 2241,
+          "incidence": 33.79,
+          "lethality": 0.53
+        },
+        {
+          "year": 2017,
+          "occurrences": 2287,
+          "incidence": 31.75,
+          "lethality": 0.83
+        },
+        {
+          "year": 2018,
+          "occurrences": 2113,
+          "incidence": 27.19,
+          "lethality": 0.63
+        },
+        {
+          "year": 2019,
+          "occurrences": 2994,
+          "incidence": 35.42,
+          "lethality": 0.72
+        },
+        {
+          "year": 2020,
+          "occurrences": 2387,
+          "incidence": 29.37,
+          "lethality": 0.47
+        },
+        {
+          "year": 2021,
+          "occurrences": 2185,
+          "incidence": 27.82,
+          "lethality": 0.88
+        },
+        {
+          "year": 2022,
+          "occurrences": 2747,
+          "incidence": 23.78,
+          "lethality": 0.45
+        },
+        {
+          "year": 2023,
+          "occurrences": 3623,
+          "incidence": 29.96,
+          "lethality": 0.35
+        },
+        {
+          "year": 2024,
+          "occurrences": 3310,
+          "incidence": 27.24,
+          "lethality": 0.48
+        }
+      ]
+    },
+    {
+      "uf": "RJ",
+      "state": "Rio de Janeiro",
+      "region": "Southeast",
+      "totalOccurrences": 24290,
+      "percentageOfBrazil": 0.92,
+      "incidenceCoefficient": 3.024,
+      "lethalityRate": 0.334,
+      "yearly": [
+        {
+          "year": 2015,
+          "occurrences": 1371,
+          "incidence": 2.79,
+          "lethality": 0.42
+        },
+        {
+          "year": 2016,
+          "occurrences": 1621,
+          "incidence": 2.65,
+          "lethality": 0.22
+        },
+        {
+          "year": 2017,
+          "occurrences": 1873,
+          "incidence": 3.16,
+          "lethality": 0.19
+        },
+        {
+          "year": 2018,
+          "occurrences": 2334,
+          "incidence": 3.43,
+          "lethality": 0.68
+        },
+        {
+          "year": 2019,
+          "occurrences": 2636,
+          "incidence": 3.52,
+          "lethality": 0.5
+        },
+        {
+          "year": 2020,
+          "occurrences": 2247,
+          "incidence": 3.23,
+          "lethality": 0.18
+        },
+        {
+          "year": 2021,
+          "occurrences": 2235,
+          "incidence": 2.86,
+          "lethality": 0.2
+        },
+        {
+          "year": 2022,
+          "occurrences": 2680,
+          "incidence": 2.81,
+          "lethality": 0.21
+        },
+        {
+          "year": 2023,
+          "occurrences": 3599,
+          "incidence": 2.67,
+          "lethality": 0.0
+        },
+        {
+          "year": 2024,
+          "occurrences": 3694,
+          "incidence": 3.12,
+          "lethality": 0.74
+        }
+      ]
+    },
+    {
+      "uf": "DF",
+      "state": "Distrito Federal",
+      "region": "Mid-west",
+      "totalOccurrences": 22263,
+      "percentageOfBrazil": 0.84,
+      "incidenceCoefficient": 2.401,
+      "lethalityRate": 0.362,
+      "yearly": [
+        {
+          "year": 2015,
+          "occurrences": 792,
+          "incidence": 2.15,
+          "lethality": 0.0
+        },
+        {
+          "year": 2016,
+          "occurrences": 1198,
+          "incidence": 2.37,
+          "lethality": 1.49
+        },
+        {
+          "year": 2017,
+          "occurrences": 1253,
+          "incidence": 2.63,
+          "lethality": 0.0
+        },
+        {
+          "year": 2018,
+          "occurrences": 1698,
+          "incidence": 2.61,
+          "lethality": 0.0
+        },
+        {
+          "year": 2019,
+          "occurrences": 2190,
+          "incidence": 2.21,
+          "lethality": 0.0
+        },
+        {
+          "year": 2020,
+          "occurrences": 2227,
+          "incidence": 2.5,
+          "lethality": 0.0
+        },
+        {
+          "year": 2021,
+          "occurrences": 2481,
+          "incidence": 2.79,
+          "lethality": 0.0
+        },
+        {
+          "year": 2022,
+          "occurrences": 2727,
+          "incidence": 2.37,
+          "lethality": 0.0
+        },
+        {
+          "year": 2023,
+          "occurrences": 3628,
+          "incidence": 2.8,
+          "lethality": 0.0
+        },
+        {
+          "year": 2024,
+          "occurrences": 4069,
+          "incidence": 1.58,
+          "lethality": 2.13
+        }
+      ]
+    },
+    {
+      "uf": "RO",
+      "state": "Rondônia",
+      "region": "North",
+      "totalOccurrences": 13378,
+      "percentageOfBrazil": 0.51,
+      "incidenceCoefficient": 27.079,
+      "lethalityRate": 0.307,
+      "yearly": [
+        {
+          "year": 2015,
+          "occurrences": 1046,
+          "incidence": 25.62,
+          "lethality": 0.23
+        },
+        {
+          "year": 2016,
+          "occurrences": 908,
+          "incidence": 25.12,
+          "lethality": 0.47
+        },
+        {
+          "year": 2017,
+          "occurrences": 1258,
+          "incidence": 24.06,
+          "lethality": 0.0
+        },
+        {
+          "year": 2018,
+          "occurrences": 1419,
+          "incidence": 30.61,
+          "lethality": 0.38
+        },
+        {
+          "year": 2019,
+          "occurrences": 1585,
+          "incidence": 32.06,
+          "lethality": 0.91
+        },
+        {
+          "year": 2020,
+          "occurrences": 1481,
+          "incidence": 29.89,
+          "lethality": 0.19
+        },
+        {
+          "year": 2021,
+          "occurrences": 1312,
+          "incidence": 27.29,
+          "lethality": 0.21
+        },
+        {
+          "year": 2022,
+          "occurrences": 1163,
+          "incidence": 24.33,
+          "lethality": 0.24
+        },
+        {
+          "year": 2023,
+          "occurrences": 1570,
+          "incidence": 26.84,
+          "lethality": 0.21
+        },
+        {
+          "year": 2024,
+          "occurrences": 1636,
+          "incidence": 24.97,
+          "lethality": 0.23
+        }
+      ]
+    },
+    {
+      "uf": "AC",
+      "state": "Acre",
+      "region": "North",
+      "totalOccurrences": 10398,
+      "percentageOfBrazil": 0.39,
+      "incidenceCoefficient": 46.546,
+      "lethalityRate": 0.229,
+      "yearly": [
+        {
+          "year": 2015,
+          "occurrences": 1082,
+          "incidence": 52.14,
+          "lethality": 0.23
+        },
+        {
+          "year": 2016,
+          "occurrences": 962,
+          "incidence": 47.95,
+          "lethality": 0.25
+        },
+        {
+          "year": 2017,
+          "occurrences": 1014,
+          "incidence": 44.76,
+          "lethality": 0.0
+        },
+        {
+          "year": 2018,
+          "occurrences": 913,
+          "incidence": 44.39,
+          "lethality": 0.53
+        },
+        {
+          "year": 2019,
+          "occurrences": 1100,
+          "incidence": 50.47,
+          "lethality": 0.0
+        },
+        {
+          "year": 2020,
+          "occurrences": 840,
+          "incidence": 45.27,
+          "lethality": 0.0
+        },
+        {
+          "year": 2021,
+          "occurrences": 996,
+          "incidence": 45.49,
+          "lethality": 0.0
+        },
+        {
+          "year": 2022,
+          "occurrences": 1061,
+          "incidence": 49.05,
+          "lethality": 0.47
+        },
+        {
+          "year": 2023,
+          "occurrences": 1125,
+          "incidence": 44.72,
+          "lethality": 0.26
+        },
+        {
+          "year": 2024,
+          "occurrences": 1305,
+          "incidence": 41.22,
+          "lethality": 0.55
+        }
+      ]
+    },
+    {
+      "uf": "RR",
+      "state": "Roraima",
+      "region": "North",
+      "totalOccurrences": 9971,
+      "percentageOfBrazil": 0.38,
+      "incidenceCoefficient": 66.652,
+      "lethalityRate": 0.677,
+      "yearly": [
+        {
+          "year": 2015,
+          "occurrences": 572,
+          "incidence": 56.51,
+          "lethality": 0.33
+        },
+        {
+          "year": 2016,
+          "occurrences": 621,
+          "incidence": 55.45,
+          "lethality": 1.32
+        },
+        {
+          "year": 2017,
+          "occurrences": 913,
+          "incidence": 75.71,
+          "lethality": 0.7
+        },
+        {
+          "year": 2018,
+          "occurrences": 1118,
+          "incidence": 86.98,
+          "lethality": 0.2
+        },
+        {
+          "year": 2019,
+          "occurrences": 1299,
+          "incidence": 69.89,
+          "lethality": 0.23
+        },
+        {
+          "year": 2020,
+          "occurrences": 936,
+          "incidence": 55.54,
+          "lethality": 0.56
+        },
+        {
+          "year": 2021,
+          "occurrences": 932,
+          "incidence": 63.82,
+          "lethality": 0.72
+        },
+        {
+          "year": 2022,
+          "occurrences": 1140,
+          "incidence": 79.15,
+          "lethality": 0.75
+        },
+        {
+          "year": 2023,
+          "occurrences": 1255,
+          "incidence": 69.76,
+          "lethality": 1.44
+        },
+        {
+          "year": 2024,
+          "occurrences": 1185,
+          "incidence": 53.71,
+          "lethality": 0.52
+        }
+      ]
+    },
+    {
+      "uf": "AP",
+      "state": "Amapá",
+      "region": "North",
+      "totalOccurrences": 8307,
+      "percentageOfBrazil": 0.31,
+      "incidenceCoefficient": 51.834,
+      "lethalityRate": 0.339,
+      "yearly": [
+        {
+          "year": 2015,
+          "occurrences": 582,
+          "incidence": 44.31,
+          "lethality": 0.91
+        },
+        {
+          "year": 2016,
+          "occurrences": 558,
+          "incidence": 42.28,
+          "lethality": 0.63
+        },
+        {
+          "year": 2017,
+          "occurrences": 673,
+          "incidence": 52.77,
+          "lethality": 0.0
+        },
+        {
+          "year": 2018,
+          "occurrences": 771,
+          "incidence": 56.81,
+          "lethality": 0.0
+        },
+        {
+          "year": 2019,
+          "occurrences": 970,
+          "incidence": 69.02,
+          "lethality": 0.0
+        },
+        {
+          "year": 2020,
+          "occurrences": 851,
+          "incidence": 50.16,
+          "lethality": 0.25
+        },
+        {
+          "year": 2021,
+          "occurrences": 937,
+          "incidence": 57.91,
+          "lethality": 0.87
+        },
+        {
+          "year": 2022,
+          "occurrences": 999,
+          "incidence": 54.56,
+          "lethality": 0.46
+        },
+        {
+          "year": 2023,
+          "occurrences": 945,
+          "incidence": 46.68,
+          "lethality": 0.27
+        },
+        {
+          "year": 2024,
+          "occurrences": 1021,
+          "incidence": 43.84,
+          "lethality": 0.0
+        }
+      ]
+    }
+  ]
+}

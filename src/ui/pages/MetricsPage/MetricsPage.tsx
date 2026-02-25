@@ -10,7 +10,7 @@
  * @module ui/pages/MetricsPage
  */
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import {
     Building2,
     MapPin,
@@ -20,6 +20,9 @@ import {
     ChevronLeft,
     ChevronRight,
     TrendingUp,
+    Activity,
+    Skull,
+    Clock3,
 } from 'lucide-react';
 import { getMetricsContent } from '../../../infrastructure/content';
 import {
@@ -31,6 +34,10 @@ import {
     getValueBasedColor,
     type StateData,
 } from '../../../infrastructure/data/metrics';
+import {
+    loadOccurrenceMetrics,
+    type OccurrenceMetricsData,
+} from '../../../infrastructure/data/occurrenceMetricsData';
 
 
 // Load content
@@ -44,20 +51,22 @@ const ITEMS_PER_PAGE = 10;
  */
 interface SummaryCardProps {
     readonly icon: React.ReactNode;
-    readonly value: number;
+    readonly value: number | string;
     readonly label: string;
     readonly description: string;
     readonly color: string;
 }
 
 function SummaryCard({ icon, value, label, description, color }: SummaryCardProps) {
+    const displayValue = typeof value === 'number' ? value.toLocaleString('pt-BR') : value;
+
     return (
         <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-100">
             <div className="flex items-start justify-between">
                 <div>
                     <p className="text-sm text-gray-500 mb-1">{label}</p>
                     <p className="text-3xl font-bold text-gray-900">
-                        {value.toLocaleString('pt-BR')}
+                        {displayValue}
                     </p>
                     <p className="text-xs text-gray-400 mt-1">{description}</p>
                 </div>
@@ -99,6 +108,173 @@ function SimpleBarChart({ data, maxValue }: BarChartProps) {
     );
 }
 
+interface OccurrenceMetricsSectionProps {
+    readonly data: OccurrenceMetricsData | null;
+    readonly isLoading: boolean;
+    readonly errorMessage: string | null;
+}
+
+function translateOccurrenceRegion(region: string): string {
+    if (region === 'Mid-west') {
+        return translateRegion('Midwest');
+    }
+
+    if (region === 'Brazil') {
+        return 'Brasil';
+    }
+
+    return translateRegion(region);
+}
+
+function OccurrenceMetricsSection({ data, isLoading, errorMessage }: OccurrenceMetricsSectionProps) {
+    if (isLoading) {
+        return (
+            <div className="bg-white rounded-xl shadow-sm p-6 mb-8 border border-gray-100">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    Ocorrências SINAN (2015-2024)
+                </h3>
+                <p className="text-sm text-gray-500">Carregando dados consolidados de ocorrências...</p>
+            </div>
+        );
+    }
+
+    if (errorMessage) {
+        return (
+            <div className="bg-red-50 rounded-xl shadow-sm p-6 mb-8 border border-red-200">
+                <h3 className="text-lg font-semibold text-red-800 mb-2">
+                    Ocorrências SINAN (2015-2024)
+                </h3>
+                <p className="text-sm text-red-700">{errorMessage}</p>
+            </div>
+        );
+    }
+
+    if (!data) {
+        return null;
+    }
+
+    const yearlyMin = Math.min(...data.brazilByYear.map((item) => item.occurrences));
+    const yearlyMax = Math.max(...data.brazilByYear.map((item) => item.occurrences));
+    const yearlyChartData = data.brazilByYear.map((item) => ({
+        name: String(item.year),
+        value: item.occurrences,
+        color: getValueBasedColor(item.occurrences, yearlyMin, yearlyMax),
+    }));
+
+    const topStates = data.byState.slice(0, 10);
+    const statesMin = Math.min(...topStates.map((item) => item.totalOccurrences));
+    const statesMax = Math.max(...topStates.map((item) => item.totalOccurrences));
+    const topStatesChartData = topStates.map((item) => ({
+        name: item.uf,
+        value: item.totalOccurrences,
+        color: getValueBasedColor(item.totalOccurrences, statesMin, statesMax),
+    }));
+
+    return (
+        <div className="bg-white rounded-xl shadow-sm p-6 mb-8 border border-gray-100">
+            <div className="mb-6">
+                <h3 className="text-lg font-semibold text-gray-900 mb-1">
+                    Ocorrências SINAN (2015-2024)
+                </h3>
+                <p className="text-sm text-gray-500">
+                    Série histórica nacional de acidentes ofídicos com incidência e letalidade.
+                </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+                <SummaryCard
+                    icon={<Activity className="w-6 h-6 text-white" />}
+                    value={data.summary.totalOccurrences}
+                    label="Ocorrências no período"
+                    description="Total de casos reportados no Brasil"
+                    color="bg-emerald-700"
+                />
+                <SummaryCard
+                    icon={<MapPin className="w-6 h-6 text-white" />}
+                    value={data.summary.averageIncidence.toFixed(2)}
+                    label="Incidência média"
+                    description={`${data.summary.averageIncidence.toFixed(2)} por 100 mil hab.`}
+                    color="bg-emerald-700"
+                />
+                <SummaryCard
+                    icon={<Skull className="w-6 h-6 text-white" />}
+                    value={`${data.summary.lethalityRate.toFixed(2)}%`}
+                    label="Taxa de letalidade"
+                    description={`${data.summary.lethalityRate.toFixed(2)}% no período`}
+                    color="bg-emerald-700"
+                />
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+                <div>
+                    <h4 className="text-sm font-semibold text-gray-900 mb-4">Evolução anual no Brasil</h4>
+                    <SimpleBarChart data={yearlyChartData} maxValue={yearlyMax} />
+                </div>
+                <div>
+                    <h4 className="text-sm font-semibold text-gray-900 mb-4">Top 10 UFs por ocorrência</h4>
+                    <SimpleBarChart data={topStatesChartData} maxValue={statesMax} />
+                </div>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div>
+                    <h4 className="text-sm font-semibold text-gray-900 mb-4 flex items-center gap-2">
+                        <Clock3 className="w-4 h-4 text-emerald-700" />
+                        Tempo até o atendimento (Brasil)
+                    </h4>
+                    <div className="space-y-3">
+                        {data.timeToCareBrazil.map((item) => (
+                            <div key={item.bucket}>
+                                <div className="flex items-center justify-between text-sm mb-1">
+                                    <span className="text-gray-600">{item.label}</span>
+                                    <span className="text-gray-900 font-medium">
+                                        {item.percentage.toFixed(2)}%
+                                    </span>
+                                </div>
+                                <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
+                                    <div
+                                        className="h-full bg-emerald-600 rounded-full"
+                                        style={{ width: `${Math.min(item.percentage, 100)}%` }}
+                                    />
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                <div>
+                    <h4 className="text-sm font-semibold text-gray-900 mb-4">
+                        Distribuição por região
+                    </h4>
+                    <div className="space-y-3">
+                        {data.byRegion.map((item) => (
+                            <div
+                                key={item.region}
+                                className="flex items-center justify-between p-3 bg-gray-50 rounded-lg"
+                            >
+                                <div>
+                                    <p className="text-sm font-medium text-gray-900">
+                                        {translateOccurrenceRegion(item.region)}
+                                    </p>
+                                    <p className="text-xs text-gray-500">{item.stateCount} UFs</p>
+                                </div>
+                                <div className="text-right">
+                                    <p className="text-sm font-semibold text-gray-900">
+                                        {item.totalOccurrences.toLocaleString('pt-BR')}
+                                    </p>
+                                    <p className="text-xs text-gray-500">
+                                        {item.percentageOfBrazil.toFixed(2)}%
+                                    </p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+}
+
 /**
  * Data table component with pagination and search.
  */
@@ -124,9 +300,13 @@ function DataTable({ data, searchTerm, onSearchChange }: DataTableProps) {
     }, [data, searchTerm]);
 
     // Pagination
-    const totalPages = Math.ceil(filteredData.length / ITEMS_PER_PAGE);
+    const totalPages = Math.max(1, Math.ceil(filteredData.length / ITEMS_PER_PAGE));
     const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
     const paginatedData = filteredData.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+    const showingFrom = filteredData.length === 0 ? 0 : startIndex + 1;
+    const showingTo = filteredData.length === 0
+        ? 0
+        : Math.min(startIndex + ITEMS_PER_PAGE, filteredData.length);
 
 
 
@@ -216,8 +396,8 @@ function DataTable({ data, searchTerm, onSearchChange }: DataTableProps) {
             {/* Pagination */}
             <div className="px-4 py-3 border-t border-gray-200 flex items-center justify-between">
                 <p className="text-sm text-gray-500">
-                    {content.table.pagination.showing} {startIndex + 1}-
-                    {Math.min(startIndex + ITEMS_PER_PAGE, filteredData.length)} {content.table.pagination.of}{' '}
+                    {content.table.pagination.showing} {showingFrom}-
+                    {showingTo} {content.table.pagination.of}{' '}
                     {filteredData.length} {content.table.pagination.results}
                 </p>
                 <div className="flex items-center gap-2">
@@ -251,6 +431,34 @@ function DataTable({ data, searchTerm, onSearchChange }: DataTableProps) {
  */
 export function MetricsPage() {
     const [searchTerm, setSearchTerm] = useState('');
+    const [occurrenceMetrics, setOccurrenceMetrics] = useState<OccurrenceMetricsData | null>(null);
+    const [isOccurrenceLoading, setIsOccurrenceLoading] = useState(true);
+    const [occurrenceErrorMessage, setOccurrenceErrorMessage] = useState<string | null>(null);
+
+    useEffect(() => {
+        let isMounted = true;
+
+        loadOccurrenceMetrics()
+            .then((data) => {
+                if (!isMounted) return;
+                setOccurrenceMetrics(data);
+                setOccurrenceErrorMessage(null);
+            })
+            .catch(() => {
+                if (!isMounted) return;
+                setOccurrenceErrorMessage(
+                    'Não foi possível carregar os dados de ocorrências. Execute o script de conversão em scripts/convert_occurrence_data.py.'
+                );
+            })
+            .finally(() => {
+                if (!isMounted) return;
+                setIsOccurrenceLoading(false);
+            });
+
+        return () => {
+            isMounted = false;
+        };
+    }, []);
 
     // Prepare chart data with value-based colors for continuous data
     const regionChartData = byRegion.map((r) => ({
@@ -340,6 +548,12 @@ export function MetricsPage() {
                         <SimpleBarChart data={stateChartData} maxValue={maxStateValue} />
                     </div>
                 </div>
+
+                <OccurrenceMetricsSection
+                    data={occurrenceMetrics}
+                    isLoading={isOccurrenceLoading}
+                    errorMessage={occurrenceErrorMessage}
+                />
 
                 {/* Data Table */}
                 <DataTable data={byState} searchTerm={searchTerm} onSearchChange={setSearchTerm} />

@@ -3,15 +3,14 @@
 
 about_page:
   title: "Sobre o Projeto"
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  description: "RODA é uma plataforma geoespacial de apoio à decisão que reúne dados validados sobre unidades de saúde que oferecem soro antiveneno no Brasil, facilitando o acesso rápido ao tratamento de acidentes ofídicos."
 
   # Hero section
   hero:
-    title: "Lorem ipsum"
+    title: "RODA – Road to Antivenom"
     content: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    highlight: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-
+      RODA é uma plataforma web interativa que integra dados curados e espacialmente validados sobre estabelecimentos de saúde com disponibilidade de soro antiveneno no Brasil. Utilizando processamento automatizado de dados, validação espacial e visualização cartográfica interativa, o sistema permite identificar rapidamente os centros mais próximos capazes de realizar o tratamento.
+    highlight: "Uma infraestrutura digital para melhorar o acesso ao tratamento de acidentes ofídicos no Brasil."
 
   # How it works section
   how_it_works:
